@@ -1,5 +1,18 @@
 # Quatro 
 
+## 0. Reproducible Package
+Prerequisites:
+* [Docker](https://docs.docker.com/engine/install/ubuntu/)
+* [NVIDIA-Docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
+* [OSRF-Rocker](https://github.com/osrf/rocker)
+
+**Terminal:**
+```
+rocker --nvidia --x11 \
+       ghcr.io/robotresearchrepos/url-kaist_quatro:main \
+       roslaunch quatro quatro.launch
+```
+
 Official page of *"A Single Correspondence Is Enough: Robust Global Registration to Avoid Degeneracy in Urban Environments"*, which is accepted @ ICRA'22. **NOTE that this repository is the re-implmenation, so it is not exactly same with the original version**.   
 
 #### [[Video]](https://www.youtube.com/results?search_query=A+single+correpsondence+is+enough) [[Priprint Paper]](https://arxiv.org/abs/2203.06612)
